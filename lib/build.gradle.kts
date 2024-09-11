@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id("maven-publish")
+    `maven-publish`
 }
 
 android {
@@ -18,8 +18,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -41,16 +40,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.github.long5436"
-                artifactId = "nguyenvanlong.oneui.composedynamiccolor"
-                version = "0.1.0"
 
-                artifact(tasks.getByName("bundleReleaseAar"))
-            }
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.long5436"
+            artifactId = "nguyenvanlong.oneui.composedynamiccolor"
+            version = "0.1.0"
         }
     }
 }
