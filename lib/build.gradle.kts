@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -38,4 +39,18 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.ui.graphics)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.long5436"
+                artifactId = "nguyenvanlong.oneui.composedynamiccolor"
+                version = "0.1.0"
+
+                artifact(tasks.getByName("bundleReleaseAar"))
+            }
+        }
+    }
 }

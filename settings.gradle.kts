@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "compose-material3-dynamic-color-for-oneui6"
+rootProject.name = "compose-material3-dynamic-color-oneui6"
 include(":lib")
