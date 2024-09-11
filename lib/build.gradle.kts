@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
 }
 
 android {
@@ -8,11 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "org.nguyenvanlong.oneui.composedynamiccolor"
         minSdk = 31
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
     }
 
     buildTypes {

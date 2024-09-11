@@ -20,7 +20,9 @@ androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", versi
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+
 [plugins]
-android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
