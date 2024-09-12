@@ -47,6 +47,9 @@ publishing {
             groupId = "com.github.long5436"
             artifactId = "nguyenvanlong.oneui.composedynamiccolor"
             version = "0.1.0"
+            afterEvaluate {
+                artifact(tasks["bundleReleaseAar"])
+            }
         }
     }
 }
