@@ -46,7 +46,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.long5436"
             artifactId = "nguyenvanlong.oneui.composedynamiccolor"
-            version = "0.1.0"
+            version = "0.1.1"
             afterEvaluate {
                 artifact(tasks["bundleReleaseAar"])
             }
