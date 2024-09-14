@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/long5436/oneui6-material3-dynamic-color-compose.svg)](https://jitpack.io/#long5436/oneui6-material3-dynamic-color-compose)
+
 # OneUI 6 Material-3 Dynamic Color Compose
 
 Since Samsung updated One UI 6, apps using Jetpack Compose with Material Design 3 no longer support dynamic colors on Samsung devices when update Compose-bom to version newer than 2024-01-00. This module is used to fix this issue until Samsung or Google officially resolves the issue.
